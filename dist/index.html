@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- <link rel="stylesheet" href="./normalize.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/umbrella.svg" type="image/x-icon" />
+    
+    <!-- <script src="./api.js" type="module" defer></script> -->
+    <title>Weather</title>
+    
+    <script type="module" crossorigin src="/assets/index-6c7a332e.js"></script>
+    <link rel="stylesheet" href="/assets/index-f2e8c92d.css">
+  </head>
+
+  <body>
+    <div id="search">
+      <button><img src="/search.svg" alt="search-icon" /></button
+      ><input type="text" placeholder="location" value="new york" />
+    </div>
+    <div id="container">
+      <div id="location">
+        <p id="time"></p>
+        <p id="date"></p>
+        <p id="place"></p>
+      </div>
+      <img id="icon" src="" alt="weather-icon" />
+      <p id="info">Moderate rain</p>
+      <div id="misc">
+        <div id="temperature" title="temperature">
+          <img src="/thermometer.svg" alt="temperature-icon" /><span>26C</span>
+        </div>
+        <div id="humidity" title="humidity">
+          <img src="/droplet.svg" alt="humidity-icon" /><span>81%</span>
+        </div>
+        <div id="wind" title="wind speed">
+          <img src="/wind.svg" alt="wind-icon" /><span>21km/h</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
